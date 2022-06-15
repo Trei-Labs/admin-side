@@ -6,7 +6,7 @@ const Cashback =()=>{
             <div className=' px-[100px] flex items-center flex-row w-[100vw] justify-evenly ' >
                 <div className='flex flex-row w-[60%] h-[250px] p-[20px] bg-white rounded-xl border-2 mr-[20px]' >
                     <div className='w-[50%]' >
-                        <p className='text-[15px]' >Account Details</p>
+                        <p className='text-[15px]' >Account Details - Wagmi Provider</p>
                         <br/>
                         <p className='text-[30px] font-bold ' >Business Account</p>
                         <p className='text-[13px]' >Address : </p>
