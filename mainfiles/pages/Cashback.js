@@ -1,7 +1,14 @@
 import React from 'react';
 import { FaEthereum} from "react-icons/fa";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
+import { useAccount,useBalance } from 'wagmi';
+
 const Cashback =()=>{
+
+    const{data}=useBalance({
+        addressOrName:'0x6549a235E999ED06d2bD8D6F6382176Ce3c3f17D'
+    });
+
     return(
         <div className='flex justify-center items-center flex-col bg-gray-100 w-[100vw] h-[100vh]' >
             <div className=' px-[100px] flex items-center flex-row w-[100vw] justify-evenly ' >
@@ -16,7 +23,7 @@ const Cashback =()=>{
                     <div className='w-[50%] text-end' >
                         <p className='text-[15px]' >Available Funds</p>
                         <br/>
-                        <label className='text-[20px]' ><FaEthereum className='inline' /> 0.176</label>
+                        <label className='text-[20px]' >{(data.formatted).substring(0,5)}  {data.symbol}</label>
                     </div>
                     
                 </div>
