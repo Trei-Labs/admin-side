@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaEthereum} from "react-icons/fa";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { useAccount,useBalance } from 'wagmi';
+import GetAccount from '../src/hooks/GetAccount';
 
 const Cashback =()=>{
 
@@ -17,13 +18,13 @@ const Cashback =()=>{
                         <p className='text-[15px]' >Account Details - Wagmi Provider</p>
                         <br/>
                         <p className='text-[30px] font-bold ' >Business Account</p>
-                        <p className='text-[13px]' >Address : </p>
+                        <p className='text-[13px]' >Address : {GetAccount()}</p>
                         <button className='mt-[40px] bg-indigo-800 text-white p-[13px] rounded-xl hover:bg-indigo-600 ' >Create Payment Link</button>
                     </div>
                     <div className='w-[50%] text-end' >
                         <p className='text-[15px]' >Available Funds</p>
                         <br/>
-                        <label className='text-[20px]' >{(data.formatted).substring(0,5)}  {data.symbol}</label>
+                        <label className='text-[20px]' ></label>
                     </div>
                     
                 </div>
