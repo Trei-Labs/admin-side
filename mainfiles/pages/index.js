@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import { VscArrowRight } from "react-icons/vsc";
 
 export default function Home() {
   return (
@@ -19,8 +19,10 @@ export default function Home() {
           <p className=' text-[30px] text-white mt-[50px]' >Choose the Loyalty Program <br/> You want to set-up</p>
         </div>
         <div className=' flex-col w-[50%] bg-white h-[100vh] p-[50px]' >
+          
           <div className='card' >
-            Set up CashBack Rewards
+            <VscArrowRight/>
+            <label>Set up CashBack Rewards </label>
             <p className='text-[18px]' >Give your customers rewards in form of crypto as cashback based on their loyalty and purchases</p>
           </div>
           <div className='card' >
