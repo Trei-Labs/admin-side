@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaEthereum} from "react-icons/fa";
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 const Cashback =()=>{
     return(
         <div className='flex justify-center items-center flex-col bg-gray-100 w-[100vw] h-[100vh]' >
