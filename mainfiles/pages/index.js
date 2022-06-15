@@ -19,12 +19,14 @@ export default function Home() {
           <p className=' text-[30px] text-white mt-[50px]' >Choose the Loyalty Program <br/> You want to set-up</p>
         </div>
         <div className=' flex-col w-[50%] bg-white h-[100vh] p-[50px]' >
+          <a href='./Cashback' >
+            <div className='card' >
+              <VscArrowRight/>
+              <label>Set up CashBack Rewards </label>
+              <p className='text-[18px]' >Give your customers rewards in form of crypto as cashback based on their loyalty and purchases</p>
+            </div>
+          </a>
           
-          <div className='card' >
-            <VscArrowRight/>
-            <label>Set up CashBack Rewards </label>
-            <p className='text-[18px]' >Give your customers rewards in form of crypto as cashback based on their loyalty and purchases</p>
-          </div>
           <div className='card' >
 
           </div>
