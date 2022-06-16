@@ -26,7 +26,8 @@ const Cashback =()=>{
     }
 
     return(
-        <div className='flex justify-center items-center flex-col bg-gray-100 w-[100vw] h-[100vh]' >
+        <>
+        <div className='flex justify-center items-center flex-col bg-gray-100 w-[100vw] h-[fit-content] py-11' >
             <div className=' px-[100px] flex items-center flex-row w-[100vw] justify-between ' >
                 <div className='flex flex-row w-[60%] h-[310px] p-[20px] bg-white rounded-xl border-2 mr-[20px]' >
                     <div className='w-[50%]' >
@@ -53,8 +54,10 @@ const Cashback =()=>{
                 </div>
                 
             </div>
-            <CashBackDisplay/>
+            
         </div>
+        <CashBackDisplay/>
+        </>
     )
 }
 

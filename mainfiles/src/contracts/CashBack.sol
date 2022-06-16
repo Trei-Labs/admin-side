@@ -41,4 +41,12 @@ contract CashBack{
         lastpurchase+=_purchaseamt;
         customers[_key]=Customer(_key,programs[_key].creator,msg.sender,_purchaseamt,purchasecount);
     }
+
+    function getProgram(uint256 _key) public view returns(Program memory){
+        return programs[_key];
+    }
+
+    function getCustomer(uint256 _key) public view returns(Customer memory){
+        return customers[_key];
+    }
 }
