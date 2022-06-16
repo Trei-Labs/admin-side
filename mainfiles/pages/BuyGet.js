@@ -1,4 +1,5 @@
 import React from 'react';
+import MerchantDisplay from '../src/commons/MerchantDisplay';
 import GetAccount from '../src/hooks/GetAccount';
 import GetBalance from '../src/hooks/GetBalance';
 
@@ -28,14 +29,7 @@ const BuyGet =() =>{
             <div className='flex flex-col w-[80%] h-[fit-content] bg-white mt-10 border-2 rounded-xl shadow-md p-[20px] ' >
                 <p className='text-2xl font-bold ' >Current Programs</p>
                 <br/>
-                <table>
-                    <tr>
-                        <th>Program ID</th>
-                        <th>Program Name</th>
-                        <th>Minimum Purchases</th>
-                        <th>Minimum Purchase Amount</th>
-                    </tr>
-                </table>
+                <MerchantDisplay/>
             </div>
         </div>
     )
