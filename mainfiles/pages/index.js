@@ -26,6 +26,14 @@ export default function Home() {
               <p className='text-[18px]' >Give your customers rewards in form of crypto as cashback based on their loyalty and purchases</p>
             </div>
           </a>
+
+          <a href='./BuyGet' >
+            <div className='card' >
+              <VscArrowRight/>
+              <label>Set up Buy X Get 1 Free Programme </label>
+              <p className='text-[18px]'>Increase your purchases by rewarding your customer with freebies the more they buy.</p>
+            </div>
+          </a>
           
           <div className='card' >
 
