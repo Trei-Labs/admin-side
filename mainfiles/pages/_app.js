@@ -15,9 +15,11 @@ import {
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 import Navbar from '../src/commons/Navbar';
+import { binanceChain } from '../src/commons/CustomChains';
+import { binanceTestChain } from '../src/commons/CustomChains';
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon, chain.polygonMumbai, chain.ropsten, chain.rinkeby],
+  [chain.mainnet,chain.ropsten, chain.polygon, chain.polygonMumbai,binanceChain, binanceTestChain],
   [
     alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }),
     publicProvider()
